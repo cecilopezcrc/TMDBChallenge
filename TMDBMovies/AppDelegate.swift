@@ -23,17 +23,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // MARK: UISceneSession Lifecycle
 
     func application(_ application: UIApplication, didFinishLaunchingWith launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        
-        // Inicializa la ventana
         window = UIWindow(frame: UIScreen.main.bounds)
-        
-        // Crea el ViewController que deseas mostrar
-        let viewController = MoviesDisplayView() // Cambia esto por tu ViewController
-        
-        // Establece el rootViewController
+        let viewController = MoviesDisplayView()
         window?.rootViewController = viewController
-        
-        // Haz que la ventana sea visible
         window?.makeKeyAndVisible()
         
         return true
